@@ -18,32 +18,71 @@
 	body{
 		display: flex;
 	height: 100%;
+
 	}
 	.container {
 	margin: auto;
+	animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
 	}
 	h1{
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 600;
-		font-size:60px;
+		font-size:30px;
 		color:#1EC9FE;
 		text-align:center;
 	}
 	h2{
 			font-family: 'Montserrat', sans-serif;
-		font-weight: 200;
-		font-size:20px;
+		font-weight: 100;
+		font-size:16px;
 	text-align:center;
-	padding-top: 10px;
+	padding-top: 5px;
 	}
 	.links{
-	padding-top:30px;
+	padding-top:20px;
 		text-align:center;
 		letter-spacing: 5px
 	}
 	a { color: #000; cursor: pointer; }
 	a:visited { color: #000; }
 	a:hover { color: #1EC9FE; }​
+
+	@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 	</style>
 	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8473354c-be06-48a0-954d-98c303e4b4b1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 	</head>
